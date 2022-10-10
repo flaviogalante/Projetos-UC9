@@ -1,2 +1,2 @@
 # Projetos-UC9
-Entrega SA2 - Atividade online 1
+# As entregas estão nas respectivas branchs de acordo com cada atividade.
