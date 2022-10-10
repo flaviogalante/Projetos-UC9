@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Game Mania</title>
+
+</head>
+<body>
+    
+    <div id="wrapper">
+
+        <!-- ÁREA HEADER -->
+
+        <header>
+            <div id="header">
+
+            <!-- Área esquerda -->
+            <div class="column left">
+                <div class="logo" alt="Logo Game Mania"></div>
+                
+            </div>
+            <!-- Fim Área esquerda -->
+
+            <!-- Área direta -->
+            <div class="column right">
+
+                <ul class="header-inner">
+                    <li>
+                        <a href="index.html" target="_blank" >Home</a>
+                    </li>
+                    <li>
+                        <a href="#Shop" target="_blank">Shop</a>
+                    </li>
+                    <li>
+                        <a href="#Blog" target="_blank">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#Press" target="_blank">Press</a>
+                    </li>
+                    <li>
+                        <a href="app.html" target="_blank">App</a>
+                    </li>
+                </ul>
+                <br><br>
+                <div class="search">
+                <input placeholder="O que você procura?" type="text" name="search" />
+                <button class="clicar-botao" value="Pesquisar">Pesquisar</button>
+                    <div class="botoes">
+                        <a href="login.html" target="_blank">
+                        <img class="login" src="img/loginbutton.png" alt="Login">
+                        </a>
+                        <a href="#" target="_blank">
+                        <img class="shop" src="img/shopchartbutton.png" alt="Carrinho de compras">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Fim Área direita -->
+            </div>
+           </header>
+
+        <!-- FIM HEADER -->        
+
+        <section id="jogodomes" class="month">
+            <div>
+                <h2>Jogo do mês: Stray</h2>
+                <br>
+                <p>Stray é um jogo de aventura felina em terceira pessoa que se 
+                    passa nos detalhados becos iluminados por néon de uma 
+                    cidade futurista e nos obscuros locais de seu submundo.
+                    <br>
+                    Veja o mundo pelos olhos de um gato de rua e interaja com o 
+                    ambiente de maneiras divertidas.</p>
+            </div>
+            <img src="img/banner.jpg" alt="Capa do jogo Stray">
+        </section>
+
+        <section>
+            <ul class="header-dois">
+                <li>
+                    <a href="#" class="borda1">Consoles</a>
+                </li>
+                <li>
+                    <a href="#" class="borda1">PC Gamer</a>
+                </li>
+                <li>
+                    <a href="#" class="borda1">Jogos</a>
+                </li>
+                <li>
+                    <a href="#" class="borda1">Periféricos</a>
+                </li>
+                <li>
+                    <a href="#" class="borda1">Smartphones</a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section id="maisvendidos" class="mostsale">            
+            <h2>Jogos mais vendidos</h2>
+                <div class="mostsale-list">
+                        <img src="img/cod.png" alt="Foto">
+                        <img src="img/fifa.png" alt="Foto">
+                        <img src="img/swars.png" alt="Foto">
+                        <img src="img/ering.png" alt="Foto">
+                </div>
+              
+        </section>
+
+        <section id="ofertasdasemana" class="weeksale">
+            <h2>Ofertas da semana</h2>
+                <div class="weeksale-list">
+                    <img src="img/semanagamer.png" alt="Foto">
+                    <img src="img/promo.png" alt="Foto">
+                    <img src="img/promo2.png" alt="Foto">
+                    <img src="img/combogamer.png" alt="Foto">
+             </div>         
+        </section>
+
+        <section id="nossosprodutos" class="ourgoods">            
+            <h2>Nossos produtos</h2>
+            <div class="ourgoods-list">
+                <img src="img/jogosdiversos.png" alt="Foto">
+                <img src="img/mouse.png" alt="Foto">
+                <img src="img/headset.png" alt="Foto">
+                <img src="img/papaigamer.png" alt="Foto">
+         </div>
+
+        </section>
+        <br>
+
+        <section id="news" class="novidades">
+            <div>
+            Newsletter & Ofertas 
+            <input placeholder="Insira seu nome" type="text" name="nome" />
+            <input placeholder="Insira seu e-mail" type="text" name="email" />
+            <button class="clicar-botao" value="Pesquisar">Cadastrar</button>
+        </div>
+
+        </section>
+<br><br>
+        <section>
+            <ul class="infos">
+                <li>
+                    <a href="#" class="borda1">Departamentos</a>
+                </li>
+                <li>
+                    <a href="#" class="borda1">Compra Segura</a>
+                </li>
+                <li>
+                    <a href="#" class="borda1">Institucional</a>
+                </li>
+                <li>
+                    <a href="#" class="borda1">F.A.Q.</a>
+                </li>
+                <li>
+                    <a href="#" class="borda1">Minha conta</a>
+                </li>
+            </ul>
+        </section>
+<br><br>
+        <section>
+            <ul class="infos2">
+                <li>
+                    <a href="#" class="borda1">Fale Conosco</a>
+                </li>
+                <li>
+                    <a href="#" class="borda1">Facebook</a>
+                </li>
+                <li>
+                    <a href="#" class="borda1">Instagram</a>
+                </li>
+                <li>
+                    <a href="#" class="borda1">WhatsApp</a>
+                </li>
+                <li>
+                    <a href="#" class="borda1">Twitter</a>
+                </li>
+            </ul>            
+
+        </section>
+
+
+        <br><br>
+        <footer>                    
+            <h6>Game Mania@ é uma marca registrada de Game Mania COMÉRCIO ELETRÔNICO S/A | CNPJ: 00.000.000/0001-00 |
+                Todos os direitos reservados. 
+                <br>Os preços anunciados neste site ou via e-mail promocional podem ser alterados sem prévio aviso.
+                A Game Mania não é responsável por erros descritivos. <br> 
+                As fotos contidas nesta página são meramente ilustrativas do produto e podem variar de acordo com o fornecedor/lote do fabricante. 
+                <br>Este site trabalha 100% em criptografia SSL.</h6>
+        </footer>
+
+</body>
+</html>
