@@ -1,0 +1,370 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: var(--button-primary);
+    text-decoration: none;
+}
+
+body{
+    --background: #03002B;
+
+    background: var(--background); 
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+
+#wrapper{
+    height: 200vh;
+}
+
+
+#header{
+    margin: 0 auto;
+    min-height: 100%;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.column{
+    width: 60%;
+    flex-grow: 1;
+}
+
+.left{
+    background-image: url("./img/logo.svg");
+    background-size: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    margin-bottom: 5px;
+    margin-top: 35px;
+    margin-right: 30px;
+    margin-left: 30px;
+    }
+
+.right{
+    padding-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    height: 130px;
+    font-size: 30px;
+    }
+
+.header-inner{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin-right: 28px;
+    }
+    
+.header-inner a{
+        text-decoration: none;
+        color: #DDD;
+        padding: 20px;
+    }
+    
+.header-inner a:hover{
+        color: #FFFFFF;
+    }
+
+.search{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 28px;
+    padding-left: 21px;
+    border-radius: 4px;
+    }
+
+
+.clicar-botao{
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.botoes{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 28px;
+    border-radius: 4px;
+    }
+
+.login{
+    width: 75%;
+    margin-left: 60px;
+    align-items: center;       
+}
+
+.shop{
+    width: 31%;
+    margin-left: 80px;  
+    align-items: center; 
+}
+
+
+
+/* INICIO SOBRE */
+.month{
+    width: 103%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.month div{
+    max-width: 50%;
+    padding-right: 40px;
+}
+
+.month img{
+    max-width: 650px;
+    border-radius: 4px;
+}
+
+.month div h2{
+    font-size: 32px;
+    margin-bottom: 14px;
+}
+/* FIM ABOUT*/
+
+.header-dois{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    font-size: 24px; 
+    font-weight: bold;    
+}
+
+.header-dois a{
+    text-decoration: none;
+    color: #DDD;
+    padding: 5px;
+}
+
+.header-dois a:hover{
+    color: #FFFFFF;
+}
+
+/* INICIO CARDS */
+
+.mostsale{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px; /* posso usar padding: 80px 0 que fica 80 top e bottom e 0 esquerda direita*/
+    margin-left: 130px;
+}
+
+.mostsale h2{
+    font-size: 24px;
+    margin-bottom: 18px;
+    margin-top: 20px;
+}
+
+.mostsale-list{
+    width: 100%;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 200px;
+}
+
+.mostsale img{
+    width: 22%;
+    margin-left: 1%;
+    margin-right: 1%;
+    opacity: 0.8; /* tirar um pouco da visibilidade*/
+    transition: 0.9s;
+}
+
+.mostsale img:hover{
+    opacity: 1;
+}
+
+.weeksale{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px; /* posso usar padding: 80px 0 que fica 80 top e bottom e 0 esquerda direita*/
+    margin-left: 130px;
+}
+
+.weeksale h2{
+    font-size: 24px;
+    margin-bottom: 18px;
+    margin-top: 20px;
+}
+
+.weeksale-list{
+    width: 100%;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 21px;
+    margin-right: 200px;
+}
+
+.weeksale img{
+    width: 22%;
+    margin-left: 1%;
+    margin-right: 1%;
+    opacity: 0.8; /* tirar um pouco da visibilidade*/
+    transition: 0.9s;
+}
+
+.weeksale img:hover{
+    opacity: 1;
+}
+
+.ourgoods{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px; /* posso usar padding: 80px 0 que fica 80 top e bottom e 0 esquerda direita*/
+    margin-left: 130px;
+}
+
+.ourgoods h2{
+    font-size: 24px;
+    margin-bottom: 18px;
+    margin-top: 20px;
+}
+
+.ourgoods img{
+    width: 22%;
+    margin-left: 1%;
+    margin-right: 1%;
+    opacity: 0.8; /* tirar um pouco da visibilidade*/
+    transition: 0.9s;
+}
+
+.ourgoods-list{
+    width: 100%;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 33px;
+    margin-right: 200px;
+}
+
+.ourgoods img:hover{
+    opacity: 1;
+}
+
+footer{
+    width: 100%;
+    background-color:var(--background);    
+    display: flex;
+    justify-content: center;    
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 35px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.novidades{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;      
+    font-size: 24px;    
+    margin-top: 35px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.infos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;   
+    font-size: 24px;
+    padding-left: 80px;
+    padding-right: 80px;     
+    list-style: none;     
+}
+
+.infos img:hover{
+    opacity: 1;
+}
+
+.infos2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly; 
+    font-size: 24px;  
+    padding-left: 80px;
+    padding-right: 80px;    
+    list-style: none;        
+}
+
+.infos2 img:hover{
+    opacity: 1;
+}
+
+.borda1{
+    border-width: 1px; 
+    border-style:solid;
+    border-color: #FFFFFF;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.app-buttons{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.app-buttons img{
+    height: 40px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.buttonhand{
+    cursor: pointer;
+}
