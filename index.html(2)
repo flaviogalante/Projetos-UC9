@@ -38,24 +38,16 @@
                         <a href="#Blog" target="_blank">Blog</a>
                     </li>
                     <li>
-                        <a href="#Press" target="_blank">Press</a>
+                        <a href="app.html" target="_blank">App</a>
                     </li>
                     <li>
-                        <a href="app.html" target="_blank">App</a>
+                        <a href="login.html" target="_blank">Login</a>
                     </li>
                 </ul>
                 <br><br>
                 <div class="search">
                 <input placeholder="O que você procura?" type="text" name="search" />
-                <button class="clicar-botao" value="Pesquisar">Pesquisar</button>
-                    <div class="botoes">
-                        <a href="login.html" target="_blank">
-                        <img class="login" src="img/loginbutton.png" alt="Login">
-                        </a>
-                        <a href="#" target="_blank">
-                        <img class="shop" src="img/shopchartbutton.png" alt="Carrinho de compras">
-                        </a>
-                    </div>
+                <button class="clicar-botao" value="Pesquisar">Pesquisar</button>                    
                 </div>
 
             </div>
