@@ -1,0 +1,483 @@
+<!-- O código a seguir está com bootstrap e javascript para deixar o site amigável e responsivo, melhorando a experiência do usuário.
+ Primeiro estou compartilhando o index.html-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script async src="script.js"></script>
+    <title>Game Mania</title>
+
+</head>
+<body>
+    
+    <div id="wrapper">
+        <!-- ÁREA HEADER -->
+    <header>
+        <div id="header">
+            <!-- Área esquerda -->
+            <div class="column left">
+                <img src="img/logo.png" alt="Logo Game Mania">              
+            </div>
+            <!-- Fim Área esquerda -->     
+
+            <!-- Área direta -->
+            <div class="column right"> 
+                <nav id="nav">             
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                        <span id="hamburguer"></span>
+                </button>
+                 <ul id="menu" role="menu">
+                    <li><a href=index.html>Home</a></li>
+                    <li><a href="/">Produtos</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href=login.html>Login</a></li>
+                    </ul><br><br>
+                </nav>  
+                <div class="search">
+                    <input placeholder="O que você procura?" type="text" name="search" />
+                        <button class="clicar-botao" value="Pesquisar">Pesquisar</button>                    
+                </div>                
+            </div>
+        </div>
+            <!-- Fim Área direita -->            
+    </header><br><br>
+ 
+
+        <!-- FIM HEADER -->      
+        <section id="jogodomes" class="month">
+            <div>
+                <h2>Jogo do mês: Stray</h2>
+                <br><br>
+                <p>Stray é um jogo de aventura felina em terceira pessoa que se 
+                    passa nos detalhados becos iluminados por néon de uma 
+                    cidade futurista e nos obscuros locais de seu submundo.
+                    <br><br>
+                    Veja o mundo pelos olhos de um gato de rua e interaja com o 
+                    ambiente de maneiras divertidas.</p>
+            </div>
+            <img src="img/banner.jpg" alt="Capa do jogo Stray">
+        </section><br><br>
+        <section>
+            <ul class="header-dois">
+                <li>
+                    <a href="#" class="borda1">Consoles</a>
+                </li>
+                <li>
+                    <a href="#" class="borda1">PC Gamer</a>
+                </li>
+                <li>
+                    <a href="#" class="borda1">Jogos</a>
+                </li>
+                <li>
+                    <a href="#" class="borda1">Periféricos</a>
+                </li>
+                <li>
+                    <a href="#" class="borda1">Smartphones</a>
+                </li>
+            </ul>
+
+        </section><br>
+    <div>
+        <section id="maisvendidos" class="mostsale">            
+            <h2>Jogos mais vendidos</h2><br>                
+                <img src="img/cod.png" alt="Foto"><br>
+                <img src="img/fifa.png" alt="Foto"><br>
+                <img src="img/swars.png" alt="Foto"><br>
+                <img src="img/ering.png" alt="Foto">  <br>         
+        </section><br>
+        <section id="ofertasdasemana" class="weeksale">
+            <h2>Melhores da semana</h2> <br>
+                    <img src="img/semanagamer.png" alt="Foto"><br>
+                    <img src="img/promo.png" alt="Foto"><br>
+                    <img src="img/promo2.png" alt="Foto"><br>
+                    <img src="img/combogamer.png" alt="Foto"> <br>     
+        </section><br><br>
+    </div>
+    <div id="news" class="novidades">
+            Newsletter & Ofertas
+            <input placeholder="Insira seu nome" type="text" name="nome" />
+            <input placeholder="Insira seu e-mail" type="text" name="email" />
+            <button class="clicar-botao" value="Pesquisar">Cadastrar</button>
+    </div><br><br>
+
+    <div class="get-app-panel">
+            
+        <div class="app-buttons">
+            <p>Mídias sociais.</p>
+            <a href="#">
+                <img src="img/facebook.svg" alt="Botão Facebook">
+            </a>
+            <a href="#">
+                <img src="img/instagram.png" alt="Botão Instagram">
+            </a>
+        </div><br>
+
+    <div class="get-app-panel">
+            
+        <div class="app-buttons">
+            <p>Baixe nosso aplicativo.</p>
+            <a href="#">
+                <img src="img/appstore.png" alt="Baixe na AppStore">
+            </a>
+            <a href="#">
+                <img src="img/googleplay.png" alt="Baixe na PlayStore">
+            </a>
+        </div>
+
+    <footer>                    
+        <h6 class="rodape">Game Mania@ é uma marca registrada de Game Mania COMÉRCIO ELETRÔNICO S/A | CNPJ: 00.000.000/0001-00 | 
+            Todos os direitos reservados. Os preços anunciados neste site ou via e-mail promocional podem ser alterados sem prévio aviso.
+            A Game Mania não é responsável por erros descritivos. As fotos contidas nesta página são meramente ilustrativas do produto e 
+            podem variar de acordo com o fornecedor/lote do fabricante. Este site trabalha 100% em criptografia SSL.</h6>
+    </footer>
+
+</body>
+</html>
+      
+      <!-- Segue abaixo o código CSS utilizado -->
+      
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: var(--button-primary);
+    text-decoration: none;
+}
+
+body{
+    --background: #03002B;
+
+    background: var(--background); 
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+#wrapper{
+    height: 200vh;
+}
+
+
+#header{
+    box-sizing: border-box;
+    min-height: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.column{
+    width: 60%;
+    flex-grow: 1;
+}
+
+.left{    
+    background-position: top;
+    height: 200px;
+    margin-top: 10px;
+}
+
+.left img{
+    max-width: 100%;
+}
+
+.right{ 
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 20px;
+}
+
+
+.clicar-botao{ /* mexe no botão pesquisar*/
+    padding: 0 4px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* INICIO SOBRE */
+
+.month{
+    padding-left: 1%;
+    padding-right: 1%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.month img{
+    width: 100%;
+    border-radius: 4px;
+}
+
+.month div h2{
+    font-size: 24px;
+}
+
+/* FIM ABOUT*/
+
+.header-dois{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 24px; 
+    font-weight: bold;    
+}
+
+.header-dois a{
+    text-decoration: none;
+    color: #DDD;
+    padding: 3px;
+}
+
+/* INICIO CARDS */
+
+.mostsale{
+    display: flex;    
+    align-items: center; /* posicionamento da frase jogos mais vendidos*/
+    width: 100%;
+    display: flex;
+}
+.mostsale img{
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 19%;
+}
+.weeksale{
+    display: flex;
+    align-items: center; /* posicionamento da frase ofertas da semana*/
+    width: 100%;
+    display: flex;    
+}
+.weeksale img{
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 19%;
+}
+
+footer{
+    width: 100%;
+    background-color:var(--background);    
+    display: flex;
+    justify-content: center;    
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.rodape {
+    font-size: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.novidades{
+    display: flex;
+    justify-content:space-evenly;
+    font-size: 22px;  
+    font-weight: bold;
+}
+
+.app-buttons{
+    box-sizing: border-box;
+    text-align: center;
+}
+.app-buttons img{
+    height: 40px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+.buttonhand{
+    cursor: pointer;
+}
+
+/* A PARTIR DAQUI É TUDO NOVO */
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+#menu a {
+    display: block;
+    padding: .5rem;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+@media (max-width: 700px) {
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 210px;
+        right: 0px;
+        background: #03002B;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+.left {
+    display: flex;
+}
+
+.left img {
+    max-width: 100%;
+    border-radius: 4px;
+    display: flex;
+}
+
+.search {
+    display: none;
+}
+
+.month{
+        padding-left: 1%;
+        padding-right: 1%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+}   
+    
+.month img{
+        max-width: 90%;
+        border-radius: 4px;
+        display: flex;
+    }
+    
+.month div h2{
+        margin-top: 20px;
+        font-size: 30px;
+        line-height: 5px;
+    }
+
+.header-dois {
+        display: none;
+    }
+
+.mostsale {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mostsale img {
+        width: 60%;
+        display: flex;
+        border-radius: 4px;
+    }
+
+.weeksale {
+        display: flex;
+        flex-direction: column;
+    }
+.weeksale img {
+    width: 60%;
+    display: flex;
+    border-radius: 4px;
+}
+
+     .novidades {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+.rodape {
+    font-size: 10px;
+    text-align: center;
+}     
+  
+
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, .05); 
+    }
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: #e7e7e7;
+        cursor: pointer;
+        gap: .5rem;          
+}
+    #hamburguer {
+        border-top: 2px solid;
+        width: 20px;        
+    }
+    #hamburguer::after, #hamburguer::before {
+      content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}     
+
+      <!-- Por último segue o javascript do menu hamburguer -->
+      
+      const btnMobile = document.getElementById('btn-mobile')
+
+function toggleMenu(event) {
+    if (event.type == 'touchstart') event.preventDefault();
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active');
+    const active = nav.classList.contains('active');
+    event.currentTarget.setAttribute('aria-expanded', active);
+    if(active) { 
+        event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+    } else {
+        event.currentTarget.setAttribute('aria-label', 'Abrir Menu');     
+    }
+}
+
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
+      
+      
+      
